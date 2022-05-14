@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    border: 0;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-size: 14px;
+}
+html, body{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 13px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    display: block;
+}
+main, footer{
+    max-width: 100%;
+}
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+input, textarea{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    &:focus-visible{
+        outline: none;
+    }
+}
+input, textarea, button, select{
+    outline: none;
+    box-shadow: none;
+}
+button{
+    padding: 0;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+*:focus-visible{
+    outline: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+figure{
+    display: flex;
+}

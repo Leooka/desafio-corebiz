@@ -1,0 +1,184 @@
+//Vitrine
+.showcase{
+    margin-top: 20px;
+    margin-bottom: 69px;
+    @media (max-width: 991px){
+        margin-top: 16.22px;
+        .slick-dots{
+            bottom: -13px;
+        }
+    }
+    &__header{
+        margin-bottom: 20px;
+        @media (max-width: 991px){
+            margin-left: 8px;
+        }
+        h3{
+            position: relative;
+            font-size: 20px;
+            font-weight: 900;
+            @media (max-width: 991px){
+                font-size: 18px;
+            }
+            &:after{
+                content: '';
+                display: block;
+                width: 65px;
+                height: 4.3px;
+                background-color: #C0C0C0;
+                @media (max-width: 991px){
+                    width: 32.5px;
+                }
+            }
+        }
+    }
+    
+    .slick-slide > div{
+        max-width: 216px;
+        margin: 0 auto;
+        @media (max-width: 991px){
+            max-width: 132px;
+        }
+    }
+    &__list{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 1300px;
+        position: relative;
+        .slick-prev, .slick-next{
+            &:before{
+                content: '';
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='22' viewBox='0 0 14 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.88085 11.0047L13.111 2.77415C13.3376 2.54806 13.4623 2.24579 13.4623 1.92348C13.4623 1.60099 13.3376 1.29889 13.111 1.07246L12.3898 0.351642C12.1636 0.124846 11.8611 0 11.5388 0C11.2165 0 10.9144 0.124846 10.688 0.351642L0.888651 10.1508C0.661318 10.3779 0.53683 10.6814 0.537725 11.0041C0.53683 11.3282 0.661139 11.6314 0.888651 11.8587L10.6788 21.6484C10.9053 21.8752 11.2074 22 11.5299 22C11.8522 22 12.1543 21.8752 12.3809 21.6484L13.1019 20.9275C13.571 20.4584 13.571 19.6946 13.1019 19.2257L4.88085 11.0047Z' fill='black'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                display: block;
+                width: 20px;
+                height: 26px;
+            }
+        }
+        .slick-next{
+            &:before{
+                transform: rotate(180deg);
+            }
+        }
+
+        .slick-track{
+            display: flex;
+        }
+
+        .slick-arrow.slick-next{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+        }
+
+        .slick-arrow.slick-prev{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+        }
+    }
+}
+
+//Card do produto
+.product{
+    max-width: 216px;
+    @media (max-width: 991px){
+        max-width: 132px;
+    }
+    &:hover{
+        cursor: pointer;
+        .product{
+            &__bottom{
+                background-color: #E6E8EA;
+            }
+
+            &__button{
+                opacity: 1;
+            }
+        }
+    }
+    &__image{
+        position: relative;
+        .flag-active{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__bottom{
+        padding-top: 7px;
+        padding-bottom: 15px;
+    }
+
+    &__name h4{
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        color: #7A7A7A;
+        @media(max-width: 991px){
+            white-space: nowrap;
+        }
+    }
+
+    &__rating{
+        margin-top: 20.65px;
+        margin-bottom: 22.35px;
+        text-align: center;
+    }
+
+    &__priceSeals{
+        margin-bottom: 4px;
+        .priceSeal, .priceOf{
+            text-align: center;
+        }
+        .priceSeal{
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: line-through;
+            color: #7A7A7A;
+            height: 16px
+        }
+        .priceOf{
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    &__installments{
+        text-align: center;
+        margin-bottom: 8.17px;
+        height: 16px;
+        > span{
+            font-size: 11px;
+            font-weight: 400;
+            color: #7A7A7A;
+        }
+    }
+
+    &__button{
+        max-width: 125.28px;
+        margin: 0 auto;
+        opacity: 0;
+        transition: all 0.2s;
+        @media (max-width: 991px){
+            opacity: 1;
+        }
+        button{
+            width: 100%;
+            padding: 8.21px 0px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #000000
+        }
+    }
+
+}

@@ -1,0 +1,109 @@
+.header{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #fff;
+        box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);
+    }
+    .header{
+        &__container {
+            padding: 16px 0 23px 0;
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media(max-width: 991px){
+                padding: 7px 20px 15px;
+            }
+
+           
+            //Search
+            .search{
+                flex: 0 1 718px;
+                margin-right: 40px;
+                &__container{
+                    position: relative;
+                }
+
+                button{
+                    position: absolute;
+                    right: 0;
+                    cursor: pointer;
+                }
+                input{
+                    border: 0;
+                    border-bottom: 1px solid #7A7A7A;
+                    padding-bottom: 6px;
+                    &::placeholder{
+                        color: #7A7A7A;
+                    }
+                }
+            }
+
+            @media (max-width: 991px){
+                .search{
+                    position: absolute;
+                    top: 99%;
+                    width: 100%;
+                    left: 0;
+                    .search{
+                        &__container{
+                            padding: 10px 20px 11px;
+                            background: #fff;
+
+                            button{
+                                right: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width: 991px){
+                .account{
+                    display: none;
+                }
+            }
+            @media (min-width: 992px){
+                .menu{
+                    display: none;
+                }
+            }
+            //Account
+            .account{
+                margin-right: 20px;
+                &__container{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        color: #7A7A7A;
+                        text-decoration: none;
+                    }
+                    figure{
+                        margin-right: 6.51px;
+                    }
+                }
+            }
+
+            //Cart
+            .cart{
+                &__container{
+                    display: flex;
+                    align-items: center;
+                }
+                &__qty{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 14px;
+                    height: 14px;
+                    font-size: 10px;
+                    color: #fff;
+                    background-color: #F8475F;
+                    margin-left: 5px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }

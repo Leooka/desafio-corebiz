@@ -1,0 +1,142 @@
+.newsletter{
+    background: #F2F2F2;
+    padding: 24px 0 36px;
+    &__container{
+        max-width: 716px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        color: #333;
+    }
+
+    &__header{
+        margin-bottom: 16px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__inputarea{
+        flex: 0 1 280px;
+        position: relative;
+        input{
+            height: 48px;
+            border: 0;
+            padding-left: 16px;
+            border-radius: 5px;
+            &.error{
+                border: 1px solid #D7182A
+            }
+            @media (min-width: 991px) {
+                &:focus-visible{
+                    border: 1px solid #BDBDBD;
+                }
+            }
+            &::placeholder{
+                font-size: 12px;
+                font-weight: 700;
+                color: #585858;
+            }
+        }
+
+        .alert{
+            position: absolute;
+            bottom: -25px;
+            >span{
+                font-family: 'Lato', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #D7182A;
+            }
+        }
+    }
+
+    &__button{
+        flex: 0 1 140px;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding: 14.5px 0;
+        border-radius: 5px;
+        color: #fff;
+        background: #000000;
+    }
+
+    &__sucessnew{
+        flex: 1;
+    }
+
+    &__sucess{
+        h4, span {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            display: block;
+        }
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+
+    &__newemail{
+        display: block;
+        margin: 15px auto 0;
+        font-size: 14px;
+        padding: 14.5px 0;
+        width: 328px;
+        background: #000;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+}
+
+@media (max-width: 991px){
+    .newsletter{
+        .newsletter{
+            &__container{
+                padding: 24px 16px 16px
+            }
+            &__title{
+                font-size: 22px;
+                font-family: 'Lato', sans-serif;
+                text-align: left;
+            }
+
+            &__form{
+                flex-direction: column;
+            }
+
+            &__inputarea{
+                flex: initial;
+                width: 100%;
+                .alert{
+                    display: none
+                }
+                &:first-child{
+                    margin-bottom: 22px;
+                }
+            }
+
+            &__button{
+                flex: initial;
+                width: 100%;
+                margin-top: 7px;
+            }
+
+            &__newemail{
+                width: 100%;
+            }
+        }
+    }
+}
